@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="toDoList.css" />
+    <title>TO-DO LIST</title>
+  </head>
+  <body>
+    <div class="todoApp">
+      <h2>To-Do List <img src="images/to-do-list.png" alt="" srcset="" /></h2>
+      <div class="inputTask">
+        <input type="text" id="InputBox" placeholder="Добавьте свою задачу" />
+        <button id="AddTask" onclick="addTask()">Добавить</button>
+      </div>
+      <ul id="listContainer"></ul>
+      <div>
+        <button class="buttons" id="deleteFtask" onclick="deleteFirstItem()">
+          Удалить первый элемент
+        </button>
+        <button class="buttons" id="deleteLasttask" onclick="deleteLastItem()">
+          Удалить последний элемент
+        </button>
+        <button class="buttons" onclick="ColorEven()">
+          Окрасить четные элементы
+        </button>
+        <button class="buttons" onclick="ColorUneven()">
+          Окрасить нечетные элементы
+        </button>
+      </div>
+    </div>
+    <script src="toDoList.js"></script>
+  </body>
+</html>

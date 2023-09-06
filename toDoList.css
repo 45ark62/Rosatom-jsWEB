@@ -1,0 +1,143 @@
+body {
+  background-color: #dec7c0;
+}
+h2 img {
+  width: 60px;
+  height: 60px;
+}
+.todoApp h2 {
+  display: flex;
+  align-items: center;
+  color: #f99014;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+.todoApp {
+  display: flex;
+  background: #fff;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  border-radius: 20px;
+
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 30px 70px;
+  padding-bottom: 40px;
+}
+.inputTask {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding-left: 20px;
+  background: #e8dcd8;
+  margin-bottom: 25px;
+  width: 75%;
+}
+input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+  outline: none;
+  font-size: 24px;
+}
+#AddTask {
+  border: none;
+  background: #f99014;
+  padding: 16px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+#listContainer {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  font-size: 30px;
+  height: auto;
+}
+#listContainer li {
+  display: flex;
+  margin-top: 10px;
+  background: #e8dcd8;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  padding: 20px 15px 15px 15px;
+  list-style-type: none;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  justify-content: space-between;
+}
+li ::before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: url(images/radio.png);
+  background-size: cover;
+  background-position: center;
+  top: 14px;
+  left: -50px;
+}
+span {
+  width: 70%;
+}
+span.Checked {
+  color: #555;
+  text-decoration: line-through;
+}
+li.Checked ::before {
+  background-image: url(images/check.png);
+}
+
+.DeleteItemButton {
+  height: 40px;
+
+  width: 120px;
+  border-radius: 10px;
+  border: none;
+  background: #dd3030;
+  color: #fff;
+  font-weight: bold;
+}
+.CompleteItemButton {
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  border: none;
+  background: #f99014;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.buttons {
+  height: 80px;
+  width: 200px;
+  margin-left: 30px;
+  border: none;
+  background: #624e4f;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.buttons:hover {
+  color: #f99014;
+}
+li.Even {
+  background-color: #a38889 !important;
+  color: #fff;
+}
+li.Uneven {
+  background-color: #e36f67 !important;
+  color: #fff;
+}
